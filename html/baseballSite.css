@@ -26,5 +26,13 @@ nav {
     background: linear-gradient(to right, #BF0D3E, #041E42);
 }
 
+.formPadding {
+    margin-bottom: 20px;
+}
+
+.submitButton {
+    background: linear-gradient(to right, #BF0D3E, #041E42);
+    color: white;   
+}
 
 

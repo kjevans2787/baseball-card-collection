@@ -76,76 +76,138 @@
 
 
 
+    <div class="container">
+        <div class="row-content col-md8 mx-auto">
+            <div id="magicCarousel" class="carousel slide my-5" data-ride="carousel">
 
-    <div class="container-fluid">
+                <!--    Carousel Indicators    -->
+                <ol class="carousel-indicators">
+                    <li data-target="#magicCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#magicCarousel" data-slide-to="1"></li>
+                    <li data-target="#magicCarousel" data-slide-to="2"></li>
+                    <li data-target="#magicCarousel" data-slide-to="3"></li>
+                </ol>
 
-        <div id="magicCarousel" class="carousel slide my-5" data-ride="carousel">
-
-            <!--    Carousel Indicators    -->
-            <ol class="carousel-indicators">
-                <li data-target="#magicCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#magicCarousel" data-slide-to="1"></li>
-                <li data-target="#magicCarousel" data-slide-to="2"></li>
-                <li data-target="#magicCarousel" data-slide-to="3"></li>
-            </ol>
-
-            <!--    Carousel Slider    -->
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img src="Phillip_Evans.jpeg" class="d-block w-100">
-                    <div class="carousel-caption">
-                        <h3>Phillip_Evans</h3>
-                        <p>One of my favorite players. This is a great autographed card.</p>
+                <!--    Carousel Slider    -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="Phillip_Evans.jpeg" class="d-block w-50">
+                        <div class="carousel-caption">
+                            <h3>Phillip_Evans</h3>
+                            <p>One of my favorite players. This is a great autographed card.</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="carousel-item">
-                    <img src="Lot_1.jpeg" class="d-block w-100">
-                    <div class="carousel-caption">
-                        <h3>Random Cards In My Collection </h3>
-                        <p>Just a few cards... Testing out my site functionality</p>
+                    <div class="carousel-item">
+                        <img src="Lot_1.jpeg" class="d-block w-50">
+                        <div class="carousel-caption">
+                            <h3>Random Cards In My Collection </h3>
+                            <p>Just a few cards... Testing out my site functionality</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="carousel-item">
-                    <img src="Lot_2.jpeg" class="d-block w-100">
-                    <div class="carousel-caption">
-                        <h3>A few more random cards...</h3>
-                        <p>Even more testing and checking...</p>
+                    <div class="carousel-item">
+                        <img src="Lot_2.jpeg" class="d-block w-50">
+                        <div class="carousel-caption">
+                            <h3>A few more random cards...</h3>
+                            <p>Even more testing and checking...</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="carousel-item">
-                    <img src="Baseball_Logo_Idea.png" class="d-block w-100">
-                    <div class="carousel-caption">
-                        <h3>Site Logo</h3>
-                        <p>Just a picture of my site logo
-                        </p>
+                    <div class="carousel-item">
+                        <img src="Baseball_Logo_Idea.png" class="d-block w-50">
+                        <div class="carousel-caption">
+                            <h3>Site Logo</h3>
+                            <p>Just a picture of my site logo
+                            </p>
+                        </div>
                     </div>
+
+                    <!--     Carousel Controls     -->
+                    <a href="#magicCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a href="#magicCarousel" class="carousel-control-next" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
                 </div>
-
-                <!--     Carousel Controls     -->
-                <a href="#magicCarousel" class="carousel-control-prev" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a href="#magicCarousel" class="carousel-control-next" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-
             </div>
         </div>
     </div>
+
+
+    <!-- Form for contacting me -->
+    <div class="container-md">
+        <h2>Contact Me!</h2>
+        <h3>Feel free to say hi, ask about my collection and more!</h3>
+
+        <div class="formPadding"></div>
+        <form>
+            <div class="row">
+                <div class=" col-4">
+                    <input type="text" class="form-inline" placeholder="First name">
+                    <input type="text" class="form-inline" placeholder="Last name">
+                </div>
+            </div>
+
+            <div class="formPadding"></div>
+
+
+            <div class="row">
+                <div class="col-4">
+                    <label for=" email">Email Address:</label>
+                    <input type="email" class="form-control" placeholder="Email Address" aria-describedby="emailHelpBlock">
+                    <small id="emailHelpBlock" class="form-text text-muted">
+                      Your email must match 
+                    </small>></label>
+                </div>
+            </div>
+
+
+            <div class="formPadding"></div>
+
+
+            <div class="row">
+                <div class="col-4">
+                    <label for="contactReason">Select a Reason for Reaching Out...</label>
+                    <select class="form-control" id="contactReason">
+                        <option value="Default" selected disabled>Please pick an option...</option>
+                        <option value="chatting">Chat about baseball cards and collecting</option>
+                        <option value="buy">I'd like to buy one of your cards</option>
+                        <option value="interested">I've got a card you might be interested in</option>
+                        <option value="trade">I'd like to talk about trading some cards with you</option>
+                        <option value="site">I have a way for you to make the site even better</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="formPadding"></div>
+
+
+            <div class="row">
+                <div class="col-4">
+                    <button type="button" class="submitButton">Send it!</button>
+                </div>
+            </div>
+        </form>
     </div>
 
 
+
+
+
+
+    <!-- build:js js/main.js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 
-    <!-- build:js js/main.js -->
+
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
