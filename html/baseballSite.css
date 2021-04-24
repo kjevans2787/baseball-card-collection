@@ -35,4 +35,21 @@ nav {
     color: white;   
 }
 
+.moreInfoButton {
+    background: linear-gradient(to right, #BF0D3E, #041E42);
+    color: white;   
+}
 
+.customButtonGradient {
+    background: linear-gradient(to right, #BF0D3E, #041E42);
+    color: white; 
+}
+
+.carouselImage {
+    height: 400px;
+    width: flex;
+}
+
+#right {
+    float: right;
+}
